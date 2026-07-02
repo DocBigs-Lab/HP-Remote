@@ -1,0 +1,66 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "PlatformIO",
+            "task": "Build",
+            "problemMatcher": ["$platformio"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "always"
+            }
+        },
+        {
+            "type": "PlatformIO",
+            "task": "Upload",
+            "problemMatcher": ["$platformio"],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "always"
+            }
+        },
+        {
+            "type": "PlatformIO",
+            "task": "Monitor",
+            "problemMatcher": ["$platformio"],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "always"
+            }
+        },
+        {
+            "type": "PlatformIO",
+            "task": "Upload and Monitor",
+            "problemMatcher": ["$platformio"],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "always"
+            }
+        },
+        {
+            "type": "PlatformIO",
+            "task": "Build Filesystem Image",
+            "problemMatcher": ["$platformio"],
+            "group": "build"
+        },
+        {
+            "type": "PlatformIO",
+            "task": "Upload Filesystem Image",
+            "problemMatcher": ["$platformio"],
+            "group": "build"
+        },
+        {
+            "type": "PlatformIO",
+            "task": "Clean",
+            "problemMatcher": ["$platformio"],
+            "group": "build"
+        }
+    ]
+}
