@@ -1,0 +1,264 @@
+{
+    "device": {
+        "id": "hp_remote_16fcd8",
+        "name": "HP-Remote-Buderus"
+    },
+    "wifi": {
+        "ssid": "wifi-ssid",
+        "password": "wifi-passwd",
+        "hostname": "hp-remote-16fcd8"
+    },
+    "camera": {
+        "width": 640,
+        "height": 480,
+        "jpeg_quality": 22,
+        "auto_exposure": false,
+        "auto_gain": false,
+        "auto_whitebalance": true,
+        "aec_value": 200,
+        "agc_gain": 2,
+        "vflip": true,
+        "hflip": true,
+        "fine_rotation": 0.1
+    },
+    "timing": {
+        "capture_interval_sec": 60
+    },
+    "debug": {
+        "level": 1
+    },
+    "mqtt": {
+        "enabled": true,
+        "image_enabled": true,
+        "host": "172.16.0.75",
+        "port": 1883,
+        "topic": "heatpump/hp_remote_16fcd8/state",
+        "username": "mqtt_user",
+        "password": "mqtt_passwd"
+    },
+    "ha": {
+        "enabled": true,
+        "discovery_prefix": "homeassistant"
+    },
+    "stream": {
+        "enabled": true
+    },
+    "seg_profiles": [
+        {
+            "name": "standard",
+            "segs": [
+                [
+                    0.36,
+                    0.06,
+                    0.3,
+                    0.06
+                ],
+                [
+                    0.8,
+                    0.18,
+                    0.1,
+                    0.2
+                ],
+                [
+                    0.8,
+                    0.62,
+                    0.1,
+                    0.2
+                ],
+                [
+                    0.36,
+                    0.88,
+                    0.3,
+                    0.06
+                ],
+                [
+                    0.12,
+                    0.62,
+                    0.1,
+                    0.2
+                ],
+                [
+                    0.12,
+                    0.18,
+                    0.1,
+                    0.2
+                ],
+                [
+                    0.36,
+                    0.47,
+                    0.3,
+                    0.06
+                ]
+            ]
+        }
+    ],
+    "rois": [
+        {
+            "id": "display_value",
+            "label": "Ist-Temperatur",
+            "type": "sevenseg",
+            "x": 427,
+            "y": 188,
+            "w": 155,
+            "h": 141,
+            "threshold": 105,
+            "digit_gap_px": 8,
+            "digits": 2,
+            "decimal_places": 0,
+            "threshold_on": 125,
+            "threshold_off": 105,
+            "invert_logic": false,
+            "auto_threshold": true,
+            "stretch_contrast": true,
+            "confidence_margin": 0,
+            "ha_enabled": true,
+            "ha_name": "Ist-Temperatur",
+            "ha_unit": "°C",
+            "ha_icon": "mdi:thermometer",
+            "ha_device_class": "temperature",
+            "ha_state_class": "measurement",
+            "seg_profile": "standard",
+            "locked": true
+        },
+        {
+            "id": "symbol_1",
+            "label": "Boost",
+            "type": "symbol",
+            "x": 304,
+            "y": 55,
+            "w": 6,
+            "h": 9,
+            "threshold": 105,
+            "digit_gap_px": 8,
+            "digits": 2,
+            "decimal_places": 0,
+            "threshold_on": 90,
+            "threshold_off": 80,
+            "invert_logic": false,
+            "auto_threshold": false,
+            "stretch_contrast": false,
+            "confidence_margin": 0,
+            "ha_enabled": true,
+            "ha_name": "Boost",
+            "ha_unit": "",
+            "ha_icon": "",
+            "ha_device_class": "",
+            "ha_state_class": "",
+            "seg_profile": "standard",
+            "locked": true
+        },
+        {
+            "id": "value_1781278625691",
+            "label": "Soll-Temperatur",
+            "type": "sevenseg",
+            "x": 34,
+            "y": 185,
+            "w": 155,
+            "h": 141,
+            "threshold": 105,
+            "digit_gap_px": 8,
+            "digits": 2,
+            "decimal_places": 0,
+            "threshold_on": 125,
+            "threshold_off": 105,
+            "invert_logic": false,
+            "auto_threshold": false,
+            "stretch_contrast": false,
+            "confidence_margin": 0,
+            "ha_enabled": true,
+            "ha_name": "Soll-Temperatur",
+            "ha_unit": "°C",
+            "ha_icon": "mdi:thermometer",
+            "ha_device_class": "temperature",
+            "ha_state_class": "measurement",
+            "seg_profile": "standard",
+            "locked": true
+        },
+        {
+            "id": "value_1781279123860",
+            "label": "Uhrzeit-HP",
+            "type": "sevenseg",
+            "x": 380,
+            "y": 378,
+            "w": 251,
+            "h": 100,
+            "threshold": 105,
+            "digit_gap_px": 8,
+            "gaps": [
+                8,
+                29,
+                9
+            ],
+            "digits": 4,
+            "decimal_places": 0,
+            "threshold_on": 125,
+            "threshold_off": 105,
+            "invert_logic": false,
+            "auto_threshold": true,
+            "stretch_contrast": true,
+            "confidence_margin": 0,
+            "ha_enabled": true,
+            "ha_name": "Uhrzeit-HP",
+            "ha_unit": "",
+            "ha_icon": "",
+            "ha_device_class": "",
+            "ha_state_class": "",
+            "seg_profile": "standard",
+            "locked": true
+        },
+        {
+            "id": "symbol_1781332439789",
+            "label": "Run",
+            "type": "symbol",
+            "x": 485,
+            "y": 43,
+            "w": 20,
+            "h": 3,
+            "threshold": 105,
+            "digit_gap_px": 8,
+            "digits": 2,
+            "decimal_places": 0,
+            "threshold_on": 125,
+            "threshold_off": 105,
+            "invert_logic": false,
+            "auto_threshold": true,
+            "stretch_contrast": false,
+            "confidence_margin": 0,
+            "ha_enabled": true,
+            "ha_name": "Run",
+            "ha_unit": "",
+            "ha_icon": "",
+            "ha_device_class": "",
+            "ha_state_class": "",
+            "seg_profile": "standard",
+            "locked": true
+        },
+        {
+            "id": "symbol_1781359501416",
+            "label": "Ready",
+            "type": "symbol",
+            "x": 11,
+            "y": 12,
+            "w": 35,
+            "h": 4,
+            "threshold": 105,
+            "digit_gap_px": 8,
+            "digits": 2,
+            "decimal_places": 0,
+            "threshold_on": 125,
+            "threshold_off": 105,
+            "invert_logic": false,
+            "auto_threshold": true,
+            "stretch_contrast": false,
+            "confidence_margin": 0,
+            "ha_enabled": true,
+            "ha_name": "Fertig",
+            "ha_unit": "",
+            "ha_icon": "",
+            "ha_device_class": "",
+            "ha_state_class": "",
+            "seg_profile": "standard",
+            "locked": true
+        }
+    ]
+}

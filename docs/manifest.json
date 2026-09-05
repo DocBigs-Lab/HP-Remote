@@ -1,0 +1,12 @@
+{
+  "name": "HP-Remote",
+  "version": "1.0.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "HP-Remote-merged.bin", "offset": 0 }
+      ]
+    }
+  ]
+}
